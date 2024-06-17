@@ -97,7 +97,7 @@ Então, abra o browser em: [http://localhost:8888/](http://localhost:8888/). O a
 
 ## Resultados 
 
-|Curva ROC                  |  Curva PRC                 |
+|Curva ROC                  |  Curva PRC XGBoost            |
 |:-------------------------:|:-------------------------:
 ![Curva ROC](./img/roc.png)  |  ![](./img/precision_recall.png)
 
