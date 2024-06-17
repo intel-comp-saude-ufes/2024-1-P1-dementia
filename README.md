@@ -54,8 +54,45 @@ A base de dados está disponibilizada na plataforma Kaggle sobre as diretrizes d
 
 ## Instalação
 
+### Ambiente virtual
+
+O pacote `conda` é necessário para criar ambientes virtuais Python. Para instalá-lo siga as instruções disponibilizadas na [Documentação](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+### Obtendo o projeto
+
+Agora, vamos clonar um repositório Git e criar um ambiente virtual Python:
+
+```bash
+# Baixe o projeto
+git clone https://github.com/intel-comp-saude-ufes/2024-1-P1-dementia.git
+
+# Entre na pasta do projeto
+cd 2024-1-P1-dementia/
+
+# Crie um ambiente virtual com nome 'dementia'
+conda create -n dementia
+
+# Ative o ambiente virtual
+conda activate dementia
+```
+
+### Instalando as dependências
+
+Uma vez no ambiente virtual, instale as dependências do projeto:
+
+```bash
+conda install --yes --file requirements.txt
+```
 
 ## Como usar
+
+Para abrir os Jupyter Notebooks que contém o projeto, basta utilizar o projeto [JupyterLab computational environment](https://github.com/jupyterlab/jupyterlab) (já consta como dependência desse trabalho). Para executá-lo, basta digitar no terminal: 
+
+```bash
+jupyter-lab
+```
+
+Então, abra o browser em: [http://localhost:8888/](http://localhost:8888/). O arquivo [notebooks/project](./notebooks/project.ipynb) que contém todo o código desenvoldido do projeto.
 
 ## Resultados 
 
