@@ -81,7 +81,8 @@ conda activate dementia
 Uma vez no ambiente virtual, instale as dependências do projeto:
 
 ```bash
-conda install --yes --file requirements.txt
+conda install pip jupyterlab
+pip install -r requirements.txt
 ```
 
 ## Como usar
