@@ -81,7 +81,8 @@ conda activate dementia
 Uma vez no ambiente virtual, instale as dependências do projeto:
 
 ```bash
-conda install --yes --file requirements.txt
+conda install pip jupyterlab
+pip install -r requirements.txt
 ```
 
 ## Como usar
@@ -96,5 +97,14 @@ Então, abra o browser em: [http://localhost:8888/](http://localhost:8888/). O a
 
 ## Resultados 
 
+|Curva ROC                  |  Curva PRC                 |
+|:-------------------------:|:-------------------------:
+![Curva ROC](./img/roc.png)  |  ![](./img/precision_recall.png)
+
+Nesse trabalho foram verificadas algumas informações interessantes quanto a demência e aos dados utilizados. Primeiramente as análises permitiram confirmar a relação tanto do tabagismo quanto da baixa escolaridade como fatores de risco para o desenvolvimento de demência e também se teve que a influência da mão dominante no desenvolvimento de demência não foi estatisticamente relevante. 
+
+Os resultados mostram que os classificadores utilizados tiveram bons resultados e teriam boa aplicabilidade para um modelo em produção. Entretanto, o algoritmo *Extreme Gradient Boosting* superou em desempenho quando comparado aos outros (melhor média harmônica F1). Dessa forma, poderia-se utilizar um sistema de alerta que avalie dados médicos básicos e aponte possíveis candidatos a desenvolver demência.
 
 ## Licença
+
+Este projeto é licenciado sob os termos da [licença MIT](./LICENSE) e está disponível gratuitamente.
